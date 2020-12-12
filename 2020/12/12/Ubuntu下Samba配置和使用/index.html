@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020/12 | 汪布斯</title>
+  <title>Ubuntu下Samba配置和使用 | 汪布斯</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="汪布斯">
-<meta property="og:url" content="http://example.com/archives/2020/12/index.html">
+  <meta name="description" content="使用“apt-get install samba”命令安装 Samba 服务 apt-get install samba 安装完成后执行 samba -v 如果可以看到版本号即为安装成功">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu下Samba配置和使用">
+<meta property="og:url" content="http://example.com/2020/12/12/Ubuntu%E4%B8%8BSamba%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="汪布斯">
+<meta property="og:description" content="使用“apt-get install samba”命令安装 Samba 服务 apt-get install samba 安装完成后执行 samba -v 如果可以看到版本号即为安装成功">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.wangyongwei.top/wp-content/uploads/2020/11/Samba-300x200.jpg">
+<meta property="article:published_time" content="2020-12-12T14:54:20.000Z">
+<meta property="article:modified_time" content="2020-12-12T14:54:42.318Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.wangyongwei.top/wp-content/uploads/2020/11/Samba-300x200.jpg">
   
     <link rel="alternative" href="/atom.xml" title="汪布斯" type="application/atom+xml">
   
@@ -146,292 +152,181 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Ubuntu下Samba配置和使用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/vsftpd%E7%9A%84%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-etc-vsftpd-vsftpd-conf%E8%AF%B4%E6%98%8E/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:58:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/vsftpd%E7%9A%84%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-etc-vsftpd-vsftpd-conf%E8%AF%B4%E6%98%8E/">vsftpd的主配置文件/etc/vsftpd/vsftpd.conf说明</a>
+    <h1 class="article-title" itemprop="name">
+      Ubuntu下Samba配置和使用
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAftp/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:57:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAftp/">Ubuntu下搭建ftp</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/%E8%9A%8C%E5%9F%A0%E5%AD%A6%E9%99%A2%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%88%B0%E5%B0%8F%E7%B1%B3-Redmi%E6%89%8B%E6%9C%BA%E5%B0%8F%E7%88%B1%E5%90%8C%E5%AD%A6%E8%AF%BE%E7%A8%8B%E8%A1%A8/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:57:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/%E8%9A%8C%E5%9F%A0%E5%AD%A6%E9%99%A2%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%E8%AF%BE%E7%A8%8B%E8%A1%A8%E5%88%B0%E5%B0%8F%E7%B1%B3-Redmi%E6%89%8B%E6%9C%BA%E5%B0%8F%E7%88%B1%E5%90%8C%E5%AD%A6%E8%AF%BE%E7%A8%8B%E8%A1%A8/">蚌埠学院教务系统自动导入课程表到小米/Redmi手机小爱同学课程表</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Ubuntu%E5%AE%89%E8%A3%85ssh%E6%9C%8D%E5%8A%A1-%E8%B8%A9%E5%9D%91%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:55:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Ubuntu%E5%AE%89%E8%A3%85ssh%E6%9C%8D%E5%8A%A1-%E8%B8%A9%E5%9D%91%E7%AF%87/">Ubuntu安装ssh服务--踩坑篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Ubuntu%E4%B8%8BSamba%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+        
+        <a href="/2020/12/12/Ubuntu%E4%B8%8BSamba%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2020-12-12T14:54:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Ubuntu%E4%B8%8BSamba%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/">Ubuntu下Samba配置和使用</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用“apt-get install samba”命令安装 Samba 服务</p>
+<pre class="code">apt-get install samba</pre>
+<p>安装完成后执行</p>
+<pre class="code">samba -v</pre>
+<p>如果可以看到版本号即为安装成功</p>
+<a id="more"></a>
+<p>主配置文件：smb.conf</p>
+<pre class="code">vi /etc/samba/smb.conf</pre>
+<p>加入配置信息</p>
+<pre class="code">[share]
+comment = share folder
+browseable = yes
+path = /home/wyw/share
+create mask = 1777
+directory mask = 1777
+public = yes
+available = yes
+writable = yes
+readonly = no
+</pre>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>这其中比较重要的参数为path和valid users, path指定了samba服务器的根目录，可以任意指定合法路径（绝对路径）；</p>
+<p>valid users表示可以访问samba服务器的合法用户；</p>
+<p>使用“/etc/init.d/samba restart”命令重启 Samba 服务</p>
+<pre class="code">/etc/init.d/samba restart</pre>
+<p>使用“/etc/init.d/samba stop”命令停止 Samba 服务</p>
+<pre class="code">/etc/init.d/samba stop</pre>
+<p>用mkdir share创建共享文件夹：</p>
+<pre class="code">mkdir share</pre>
+<p>使用chmod 777 share修改共享文件夹权限：</p>
+<pre class="code">chmod 777 share</pre>
+<p>在windows下通过</p>
+<p>\+ip    访问（注意斜杠方向）</p>
+<p>效果如图所示：</p>
+<img class="alignnone size-medium wp-image-182" src="https://www.wangyongwei.top/wp-content/uploads/2020/11/Samba-300x200.jpg" alt="" width="300" height="200" />
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/12/Ubuntu%E4%B8%8BSamba%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Debian10%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:53:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/12/12/Ubuntu%E5%AE%89%E8%A3%85ssh%E6%9C%8D%E5%8A%A1-%E8%B8%A9%E5%9D%91%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Ubuntu安装ssh服务--踩坑篇
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/12/12/Debian10%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Debian10切换镜像源</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Debian10%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/">Debian10切换镜像源</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Ubuntu20-04-LTS%E4%BF%AE%E6%94%B9%E9%95%9C%E5%83%8F%E6%BA%90/" class="archive-article-date">
-  	<time datetime="2020-12-12T14:50:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Ubuntu20-04-LTS%E4%BF%AE%E6%94%B9%E9%95%9C%E5%83%8F%E6%BA%90/">Ubuntu20.04 LTS修改镜像源</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/Ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AENFS/" class="archive-article-date">
-  	<time datetime="2020-12-12T13:38:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/Ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AENFS/">Ubuntu下配置NFS</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-12-12T11:37:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/12/hello-world/" class="archive-article-date">
-  	<time datetime="2020-12-12T11:35:10.390Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -454,8 +349,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
