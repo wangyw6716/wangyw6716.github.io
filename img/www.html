@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Home</title>
+    <link rel="icon" href="https://www.wangyongwei.top/wp-content/uploads/2020/11/lanyangyang-1.jpg">
+
+    <style>
+        .baidu {
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+        .http div ul {
+            list-style: none;
+            display: block;
+            white-space: nowrap;
+        }
+
+        a {
+            color: #2440b3;
+        }
+
+        .http div ul li {
+            position: relative;
+            display: inline-block;
+            width: 102px;
+            height: 20px;
+            /* line-height: 20px; */
+            padding: 6px 0 3px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .cl333 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .align-center {
+            margin: 15px auto;
+            width: 1200px;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #F00
+        }
+
+        a {
+            color: #333
+        }
+
+        .top {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer {
+            width: 50px;
+            margin: 5px auto;
+            padding: 20px 0;
+        }
+
+        .form-hook {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="top">
+        <div style="float: left;">
+            <img src="https://www.wangyongwei.top/wp-content/uploads/2020/11/lanyangyang-1.jpg" height="50" width="60"
+                alt="">
+        </div>
+        <div style="float: left;">
+            <h1 style="font-family: 'Courier New', Courier, monospace;"><a href="https://www.wangyongwei.top/"
+                    target="_blank">首席插秧师为你指路</a></h1>
+        </div>
+    </div>
+    <!--这个是百度搜索
+         <form data-hook="searchForm" action="https://www.baidu.com/s" class="form-hook" target="_blank">
+        <div class="baidu" data-hook="inputBox"><input data-hook="searchInput"
+                style="height: 30px; width: 400px; font-size: 20px;" placeholder="搜你想搜" name="word" value=""
+                class="textInput input-hook" type="text" autocomplete="off">
+            <input style="width:80px;
+                height:30px;
+                background:#ddd font-size: 22px; text-align: center; data-hook=" searchsubmit"="" alog-action="search"
+                class="g-cp submitInput button-hook" type="submit" value="搜索">
+        </div>
+    </form> -->
+    <!-- 多搜索 -->
+    <div class="form-hook">
+        <div>
+            <form name="searchform" onSubmit="return dosearch();">
+
+                <input name="ie" type="hidden" value="UTF-8">
+                <input style="height: 26px; width: 400px; font-size: 20px;" placeholder="搜你想搜" type="text"
+                    name="searchterms">
+
+                <select style="width:80px;
+                height:30px;
+                background:#ddd font-size: 22px; text-align: center; data-hook=" searchsubmit"="" alog-action="search"
+                    class="g-cp submitInput button-hook" name="sengines">
+                    <option value="http://www.baidu.com/s?wd=" selected>百度</option>
+                    <option value="https://cn.bing.com/search?q=">Bing</option>
+                    <option value="http://www.google.com/search?q=">谷歌</option>
+                    <option value="http://xueshu.baidu.com/s?wd=">百度学术</option>
+                    <option value="https://scholar.google.com/scholar?q=">谷歌学术</option>
+                    <option value="http://s.weibo.com/weibo/">微博搜索</option>
+                    <option value="https://search.smzdm.com/?c=home&s=">值得买</option>
+                    <option value="https://www.zhihu.com/search?type=content&q=">知乎</option>
+                </select>
+
+
+                <input style="width:80px;
+                height:30px;
+                background:#ddd font-size: 22px; text-align: center; data-hook=" searchsubmit"="" alog-action="search"
+                    class="g-cp submitInput button-hook" type="submit" class="btn" name="SearchSubmit" value="搜索">
+            </form>
+
+            <script type="text/javascript">
+                function dosearch() {
+                    var sf = document.searchform;
+                    var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + encodeURI(sf.searchterms.value) + "&ie=utf-8";
+                    window.open(submitto);
+                    return false;
+                }
+            </script>
+            <br />
+        </div>
+    </div>
+
+    <!-- 超链接 -->
+    <div class="http align-center">
+        <div>
+            <ul>
+                <li>
+                    <p class="cl333">娱乐</p>
+                </li>
+                <li><a href="https://weibo.com/" target="_blank">微博</a></li>
+                <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+                <li><a href="http://v.qq.com/" target="_blank">腾讯视频</a></li>
+                <li><a href="http://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
+                <li><a href="http://www.youku.com/" target="_blank">优酷</a></li>
+                <li><a href="http://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
+                <li><a href="http://www.mgtv.com/" target="_blank">芒果TV</a></li>
+                <li><a href="http://ifkdy.com/" target="_blank">影视搜索</a></li>
+                <li><a href="https://youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="cl333">Tools</p>
+                </li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+                <li><a href="https://cn.bing.com/" target="_blank">Bing</a></li>
+                <li><a href="https://www.hao123.com/" target="_blank">hao123</a></li>
+                <li><a href="https://console.cloud.tencent.com/" target="_blank">腾讯云</a></li>
+                <li><a href="https://fanyi.baidu.com/?aldtype=16047#auto/zh" target="_blank">百度翻译</a></li>
+                <li><a href="https://www.52pojie.cn/" target="_blank">吾爱破解</a></li>
+                <li><a href="https://www.csdn.net/" target="_blank">CSDN</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="cl333">网盘</p>
+                </li>
+                <li><a href="https://cloud.189.cn/main.action" target="_blank">天翼云盘</a></li>
+                <li><a href="https://www.aliyundrive.com/drive" target="_blank">阿里云盘</a></li>
+                <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
+                <li><a href="https://www.lanzou.com/" target="_blank">蓝奏云</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="cl333">购物</p>
+                </li>
+                <li><a href="http://www.mi.com/" target="_blank">小米商城</a></li>
+                <li><a href="https://s.click.taobao.com/c5KDj9w" target="_blank">淘宝</a></li>
+                <li><a href="https://union-click.jd.com/jdc?d=iEZf6v" target="_blank">京东</a></li>
+                <li><a href="yulin.html" target="_blank">YL</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p class="cl333">一键直达</p>
+                </li>
+                <li><a href="http://www.bbc.edu.cn/" target="_blank">蚌埠学院</a></li>
+                <li><a href="http://222.207.13.101/bbxyjw/cas/login.action" target="_blank">蚌院教务</a></li>
+                <li><a href="http://i.mooc.chaoxing.com/space/index.shtml" target="_blank">超星泛雅</a></li>
+                <li><a href="http://1.1.2.3/" target="_blank">BBU</a></li>
+                <li><a href="http://miwifi.com/cgi-bin/luci/web" target="_blank">小米路由登录</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <div style="width:300px;margin:5px auto; padding:50px;text-align: center;padding-bottom: 0px;">
+        <a href="https://www.wangyongwei.top/" target="_blank"><strong>汪布斯</strong></a>
+        <br>
+        <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备2020017327号-2</a>
+        <br>
+        <span id="busuanzi_container_site_pv">您是本站第<span id="busuanzi_value_site_pv"></span>位访问者</span>
+    </div>
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0fc18009f59c00c9cf420be827d8f023";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>
